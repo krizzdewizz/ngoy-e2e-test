@@ -24,8 +24,9 @@ Run the web server:
 gradle run
 ```
 
-Run the test:
+Run the test in another shell:
 
 ```
-$ jmeter\session-state-test
+$ cd jmeter
+$ session-state-test
 ```
