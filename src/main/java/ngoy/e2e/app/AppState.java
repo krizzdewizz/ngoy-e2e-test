@@ -17,8 +17,8 @@ import org.springframework.web.context.WebApplicationContext;
 @Component
 @Scope(value = WebApplicationContext.SCOPE_SESSION, proxyMode = ScopedProxyMode.TARGET_CLASS)
 public class AppState {
-	private String user;
-	private LocalDateTime created;
+	private final String user;
+	private final LocalDateTime created;
 	private String message;
 
 	public AppState() {

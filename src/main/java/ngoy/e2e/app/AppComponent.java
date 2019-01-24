@@ -24,7 +24,8 @@ public class AppComponent implements OnInit {
 
 	@PostMapping("/setmessage")
 	public String setMessage(String message) {
-		appState.setMessage(message);
+		appStateProvider.getAppState()
+				.setMessage(message);
 		return "redirect:/";
 	}
 }
