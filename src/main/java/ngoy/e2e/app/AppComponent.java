@@ -18,7 +18,7 @@ public class AppComponent implements OnInit {
 	public AppState appState;
 
 	@Override
-	public void ngOnInit() {
+	public void onInit() {
 		appState = appStateProvider.getAppState();
 	}
 
